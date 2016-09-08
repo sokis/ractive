@@ -56,9 +56,9 @@ export default class Section extends Mustache {
 		return this.fragment ? this.fragment.detach() : createDocumentFragment();
 	}
 
-	find ( selector ) {
+	find ( selector, options ) {
 		if ( this.fragment ) {
-			return this.fragment.find( selector );
+			return this.fragment.find( selector, options );
 		}
 	}
 
@@ -68,9 +68,9 @@ export default class Section extends Mustache {
 		}
 	}
 
-	findComponent ( name ) {
+	findComponent ( name, options ) {
 		if ( this.fragment ) {
-			return this.fragment.findComponent( name );
+			return this.fragment.findComponent( name, options );
 		}
 	}
 
