@@ -9,8 +9,7 @@ var methodCallPattern = /^([a-zA-Z_$][a-zA-Z_$0-9]*)\(.*\)\s*$/,
 	ExpressionParser;
 
 ExpressionParser = Parser.extend({
-	converters: [ readExpression ],
-	spreadArgs: true
+	converters: [ readExpression ]
 });
 
 // TODO clean this up, it's shocking
